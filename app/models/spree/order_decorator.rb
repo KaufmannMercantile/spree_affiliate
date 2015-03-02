@@ -7,7 +7,7 @@ include AffiliateCredits
 	  if user && user.affiliate_partner && user.orders.where(:state => 'complete').count == 1
 	      sender = user.referred_by
 	      #create credit (if required)
-	      create_affiliate_credits(sender, user, "purchase")
+	      create_affiliate_credits(sender, user, "purchase") if self.total > 50
 	   end
   end
 
