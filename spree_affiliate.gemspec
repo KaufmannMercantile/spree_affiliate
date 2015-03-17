@@ -2,8 +2,8 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_affiliate'
-  s.version     = '2.0.3'
- 
+  s.version     = '2.3.0'
+
   s.authors     = ['Rails Dog']
   s.email       = 'gems@railsdog.com'
   s.homepage    = 'http://github.com/spree/spree_affiliate'
@@ -13,13 +13,13 @@ Gem::Specification.new do |s|
 
  s.required_ruby_version = '>= 1.9.3'
 
- 
+
   #s.files       = `git ls-files`.split("\n")
   #s.test_files  = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'spree_core', '~> 2.0.3'
+  s.add_dependency 'spree_core', '~> 2.3.0'
 
   s.add_development_dependency 'capybara', '~> 2.1'
   s.add_development_dependency 'coffee-rails'
